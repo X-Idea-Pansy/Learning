@@ -1,5 +1,40 @@
 
 ## Règles de base
 
-`echo off` 
+# Echo
 
+`>echo test` -> terminal renvoie test
+
+`@echo off` début programme -> renvoie résultats sans les commandes 
+
+# Programm krts.bat (extension nécessaire pour batch)
+
+`go to nomNouveauPgm`
+`:nomNouveauPgm` -> Déclarer nouveau programme
+echo Bonjour -> renvoie Bonjour
+`echo.` -> faire un saut de ligne
+`echo 1 - PING`
+`echo 2 - Empty`
+`echo 3 - Quit`
+`echo.` 
+`set choiceinput=` 
+`set /p choiceinput=Faire un choix:` 
+
+# Test prompt terminal
+
+`>set age=18` -> affecter valeur à variable
+`>echo %age%` -> terminal renvoie 18
+
+`>krts.bat`
+Bonjour
+
+1 - PING
+2 - Empty
+3 - Quit
+
+Faire un choix: -> Taper choix (exemple : 1 choiceinput affectée)
+
+
+
+`set choiceinput=` 
+`set /p choiceinput=` 
