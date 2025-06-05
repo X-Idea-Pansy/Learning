@@ -34,7 +34,49 @@ Bonjour
 
 Faire un choix: -> Taper choix (exemple : 1 choiceinput affectée)
 
-
-
 `set choiceinput=` 
 `set /p choiceinput=` 
+
+`if %choiceinput%==1 goto choice1`
+`if %choiceinput%==2 goto choice2`
+`if %choiceinput%==3 goto exit`
+
+
+
+:choice1
+cls -> clean terminal
+set adresse=
+set /p adresse= Entrer une adresse (www.google.fr):
+ping -4 -n 3 %adresse%
+echo.
+pause
+cls
+goto start
+
+:choice2
+cls
+timeout /t 5
+echo.
+echo Vidage cache DNS en cours
+echo.
+ipconfig /flushdns
+echo.
+timeout /t 5
+echo.
+echo ...
+echo.
+echo Succes.
+echo.
+pause
+cls
+goto start
+
+:exit
+color F
+cls
+exit /b quitter pgm sans quitter interface
+
+
+# PING
+`>ping /?` -> infos help pour ping
+
