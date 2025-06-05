@@ -1,0 +1,12 @@
+### ls _ list
+`ls` -> list what is inside current folder
+
+### cd _ Change Directory
+
+$ cd [Option] [Répertoire] 
+`cd nameofFile/` -> go to file 
+`cd /` répertoire racine
+`cd /Desktop`
+
+### mkdir _ make directory
+`mkdir Dessins` -> creates folder at current place
