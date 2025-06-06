@@ -51,16 +51,16 @@ Source: <https://www.lemagit.fr/conseil/Reseau-comprendre-les-14-protocoles-esse
 
 ### BGP, passerelle entre les frontières _ Border Gateway Protocol
 
-  AS = Automous System -> "bulle" internet qui regroupe les réseaux locaux (exemple entreprise)
-  BGP externe = gère flux de paquets passant sur routeur entre AS et internet global
-  BGP interne = gère flux de paquets passant sur routeur entre réseaux locaux dans un AS
+* AS = Automous System -> "bulle" internet qui regroupe les réseaux locaux (exemple entreprise)
+* BGP externe = gère flux de paquets passant sur routeur entre AS et internet global
+* BGP interne = gère flux de paquets passant sur routeur entre réseaux locaux dans un AS
 
-  LAN = local area networks
-  WAN = wide area networks -> majoritaire
+* LAN = local area networks
+* WAN = wide area networks -> majoritaire
 
 ### DNS, le système de noms de domaine _ Domain name system
 
-  site web = nom de domaine = adresse IP
+-> site web = nom de domaine = adresse IP
   utilisateur -> cherche nom de domaine (hostname)
   serveur DNS -> convertit nom de domaine en IP (via cache/local browser < recursive resolver)
               -> cherche IP
@@ -68,24 +68,25 @@ Source: <https://www.lemagit.fr/conseil/Reseau-comprendre-les-14-protocoles-esse
 ### DHCP, configuration dynamique des hôtes _ Dynamic Host Configuration Protocol
 
   appareil première connexion à un réseau
-  handshake avec serveur qui propose adresse IP et options, appareil choisit, serveur valide
-  adresse IP static -> config manuelle
   -> distributeur d'IP
+  handshake avec serveur qui propose adresse IP et options, appareil choisit, serveur valide
 
+* adresse IP static -> config manuelle
+  
 ### FTP, transfert de fichiers _ File Transfer Protocol
 
-  control connection (port 21) : `get, put, ls, cd`
-  data connection (port 20)
-  FTP = without encryption : not secured
-  SFTP_SSH File Transfer Protocol (port 22)
-  FTPS_FTP Secure : SSL or TLS encryption
-  secteur bancaire
+* control connection (port 21) : `get, put, ls, cd`
+* data connection (port 20)
+* FTP = without encryption : not secured
+* SFTP_SSH File Transfer Protocol (port 22)
+* FTPS_FTP Secure : SSL or TLS encryption
+  _secteur bancaire_
 
 ### HTTP, transfert hypertexte _ Hypertext Transfer Protocol
 
-  couche 7 "Application" modèle ISO
-  TCP/IP based -> initial connection and after reconnection
-  deliver access to content
-  connectionless - server disconnects client then reconnects with response
-  every type of data if both ends can read those
-  stateless : sever and device know about each other during time of request, not after
+* TCP/IP based -> initial connection and after reconnection
+  -> deliver access to content
+* connectionless - server disconnects client then reconnects with response
+* every type of data if both ends can read those
+* stateless : sever and device know about each other during time of request, not after
+_couche 7 "Application" ISO model_
