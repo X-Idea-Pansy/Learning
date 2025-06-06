@@ -1,5 +1,7 @@
 # PROTOCOLES
 
+Source: <https://www.lemagit.fr/conseil/Reseau-comprendre-les-14-protocoles-essentiels>
+
 ## Sommaire
 
 * Protocoles de communication
@@ -24,7 +26,7 @@
 
 ## Protocoles de communication
 
-### ARP, le protocole de résolution d’adresses _ ARP (Address Resolution Protocol)
+### ARP, résolution d’adresses _ Address Resolution Protocol
 
     convert adresses IP <-> adresses MAC : comm. entre appareils du réseau local
     * adresses avec longueurs diff
@@ -32,10 +34,38 @@
 
     MAC: Media Access Control _ unique ID _ comm. entre (1 physique) et (3 réseau) modèle OSI _ Ethernet et Wi-Fi, technologies de réseau IEEE 802 
       -> identifier de manière unique un élément matériel spécifique
+      -> ident devices on a network
       -> MAC est codée en dur dans le matériel d'un appareil et ne peut pas être modifiée, stockées dans le micrologiciel du périphérique
 
     IP: Internet Protocol _ logical ID : network ID + host ID 
       -> identifier un périphérique sur un réseau
+      -> locate a device on a network
       -> peut être attribuée de manière dynamique ou statique et peut changer au fil du temps, généralement attribuées par votre FAI (fournisseur d'accès Internet)
       * IPv4 : 192.168.1.1
       * IPv6 : 2001:0db8:85a3:0000:0000:8a2e:0370:7334 -> huit groupes de quatre chiffres hexadécimaux
+
+      Dans un réseau : appareil cherche IP -> demande à tous sur réseau
+                       réponse de l'appareil portant cette IP avec adresse MAC -> adressage direct
+                       ajout IP + MAC associés dans cache pour aller plus vite ensuite
+                       dynamic ou static, dynamic nettoyé régulièrement
+
+### BGP, passerelle entre les frontières _ Border Gateway Protocol
+
+  AS = Automous System -> "bulle" internet qui regroupe les réseaux locaux (exemple entreprise)
+  BGP externe = gère flux de paquets passant sur routeur entre AS et internet global
+  BGP interne = gère flux de paquets passant sur routeur entre réseaux locaux dans un AS
+
+  LAN = local area networks
+  WAN = wide area networks -> majoritaire
+
+### DNS, le système de noms de domaine _ Domain name system
+
+  site web = nom de domaine = adresse IP
+  utilisateur -> cherche nom de domaine (hostname)
+  serveur DNS -> convertit nom de domaine en IP (via cache/local browser < recursive resolver)
+              -> cherche IP
+
+### DHCP, configuration dynamique des hôtes _ Dynamic Host Configuration Protocol
+
+  appareil première connexion à un réseau
+  handshake avec serveur qui propose adresse IP et options, appareil choisit, serveur valide
