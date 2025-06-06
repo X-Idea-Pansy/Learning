@@ -1,31 +1,28 @@
 # PROTOCOLES
 
-## Protocoles de communication:
+* Protocoles de communication
+  * résolution d’adresses (ARP)
+  * transfert hypertexte (HTTP)
+  * Internet (IP)
+  * transfert de courrier simple (SMTP)
+  * contrôle du transport (TCP)
+  * datagramme de l’utilisateur (UDP)
 
-* résolution d’adresses (ARP)
-* transfert hypertexte (HTTP)
-* Internet (IP)
-* transfert de courrier simple (SMTP)
-* contrôle du transport (TCP)
-* datagramme de l’utilisateur (UDP)
+* Protocoles de routage
+  * Border Gateway Protocol (BGP)
+  * Open Shortest Path First (OSPF)
 
-## Protocoles de routage:
+* Protocoles de gestion de réseau
+  * système de noms de domaine (DNS)
+  * configuration dynamique des hôtes (DHCP)
+  * transfert de fichiers (FTP)
+  * messages de contrôle Internet (ICMP)
+  * gestion de réseau simple (SNMP)
+  * Telnet
 
-* Border Gateway Protocol (BGP) 
-* Open Shortest Path First (OSPF)
+## Protocoles de communication
 
-## Protocoles de gestion de réseau:
-
-* système de noms de domaine (DNS)
-* configuration dynamique des hôtes (DHCP)
-* transfert de fichiers (FTP)
-* messages de contrôle Internet (ICMP)
-* gestion de réseau simple (SNMP)
-* Telnet
-
-### Protocoles de communication:
-
-#### ARP, le protocole de résolution d’adresses _ ARP (Address Resolution Protocol)
+### ARP, le protocole de résolution d’adresses _ ARP (Address Resolution Protocol)
 
     convert adresses IP <-> adresses MAC : comm. entre appareils du réseau local
     * adresses avec longueurs diff
