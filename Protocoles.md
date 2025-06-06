@@ -68,5 +68,25 @@ Source: <https://www.lemagit.fr/conseil/Reseau-comprendre-les-14-protocoles-esse
 ### DHCP, configuration dynamique des hôtes _ Dynamic Host Configuration Protocol
 
   appareil première connexion à un réseau
-  
   handshake avec serveur qui propose adresse IP et options, appareil choisit, serveur valide
+  adresse IP static -> config manuelle
+  -> distributeur d'IP
+
+### FTP, transfert de fichiers _ File Transfer Protocol
+
+  control connection (port 21) : `get, put, ls, cd`
+  data connection (port 20)
+  FTP = without encryption : not secured
+  SFTP _ SSH File Transfer Protocol (port 22)
+  FTPS _ FTP Secure : SSL or TLS encryption
+  secteur bancaire
+
+### HTTP, transfert hypertexte _ Hypertext Transfer Protocol
+
+  couche 7 "Application" modèle ISO
+  TCP/IP based -> initial connection and after reconnection
+  deliver access to content
+  connectionless - server disconnects client then reconnects with response
+  every type of data if both ends can read those
+  stateless : sever and device know about each other during time of request, not after
+  
