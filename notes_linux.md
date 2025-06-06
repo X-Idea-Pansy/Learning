@@ -1,21 +1,11 @@
 
 # Notes linux
 
-wsl access windows userfile
-
-## Généralités Ubuntu
-
-Mettre à jour le cache et les **paquets**
-
-```shell
-sudo apt-get update && sudo apt-get upgrade
-```
-
-### Commandes
+## Commandes Linux
 
    `pwd` = print working directory
 
-#### cd
+### cd
 
    `cd`= change directory
    `cd [Option] [Répertoire]`
@@ -25,26 +15,26 @@ sudo apt-get update && sudo apt-get upgrade
 `cd ..` -> go back
 `cd ../`= revenir en arrière dans le dossier source
 
-#### cat
+### cat
 
 `cat /etc/group` = voir groupes et utilisateurs
 `sudo apt-get install python` = installer package
 
-#### ID
+### ID
 
 `id` =`whoami`
 `sudo -i` = devenir root -> mefiat
 
-#### create
+### create
 
-   `ln -s /mnt/c/Users/Utilisateur/Coding ./Coding`créer lien entre dossier existant à nouveau dossier dans dossier courant
+`ln -s /mnt/c/Users/Utilisateur/Coding ./Coding`créer lien entre dossier existant à nouveau dossier dans dossier courant
 
-##### cp _ Copy
+#### cp _ Copy
 
 `cp [Original] [Destination]`
 `cp text.txt /home/utilisateur/dossierdedestination/`
 
-##### mv _ move
+#### mv _ move
 
 `mv -i` -> demande confirmation avant d'écraser
 `mv -n`-> ne pas écraser si conflit
@@ -66,7 +56,7 @@ sudo apt-get update && sudo apt-get upgrade
     -v ou –verbose : elle permet d’afficher l’état de progression du déplacement.
 `mv $(ls --ignore=Dessins2.txt)` -> tout déplacer sauf le fichier "Dessins2.txt"
 
-##### Create files
+#### Create files
 
 * mkdir _ make directory
 `mkdir Dessins` -> creates folder in current directory
@@ -80,13 +70,13 @@ sudo apt-get update && sudo apt-get upgrade
 `> filename`
 `> /path/to/filename`
 
-#### Remove
+### Remove
 
 `rmdir`_remove empty directory
 `rm -rf`_remove directory
 `clear`_clear terminal
 
-##### vim _ éditeur de texte
+#### vim _ éditeur de texte
 
 Once you are in insert mode, press `Esc` to return to command mode.
 To save your changes and exit Vim, type `:wq` and press `Enter`.
@@ -96,11 +86,21 @@ To save your changes and exit Vim, type `:wq` and press `Enter`.
 
 `curl` -> client http
 
-#### Listing
+## Listing
 
 `ls` -> list what is inside current folder
 `ll` or `ls - l` -> long listing command
 `ls -a`= afficher tout dans dossier
+
+## Généralités Ubuntu
+
+wsl access windows userfile
+
+Mettre à jour le cache et les **paquets**
+
+```shell
+sudo apt-get update && sudo apt-get upgrade
+```
 
 ### Lecture infos
 
@@ -133,7 +133,7 @@ drwxr-xr-x = droits pour 3 types de groupes par 3 caractères : read, write, exe
     inet6 fe80::215:5dff:fe9b:4eb3/64 scope link
        valid_lft forever preferred_lft forever
 
-## K3S
+### K3S
 
 (distribution kubernetes légère)
 
