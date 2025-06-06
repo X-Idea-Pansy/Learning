@@ -1,13 +1,13 @@
 
-## Règles de base
+# Règles de base
 
-# Echo
+## Echo
 
 `>echo test` -> terminal renvoie test
 
 `@echo off` début programme -> renvoie résultats sans les commandes 
 
-# Programm krts.bat (extension nécessaire pour batch)
+## Programm krts.bat (extension nécessaire pour batch)
 
 `go to nomNouveauPgm`
 `:nomNouveauPgm` -> Déclarer nouveau programme
@@ -20,7 +20,7 @@ echo Bonjour -> renvoie Bonjour
 `set choiceinput=` 
 `set /p choiceinput=Faire un choix:` 
 
-# Test prompt terminal
+## Test prompt terminal
 
 `>set age=18` -> affecter valeur à variable
 `>echo %age%` -> terminal renvoie 18
