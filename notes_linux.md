@@ -13,25 +13,103 @@ sudo apt-get update && sudo apt-get upgrade
 
 ### Commandes
 
-`pwd` = print working directory
-`cd`= change directory
+   `pwd` = print working directory
+
+#### cd
+
+   `cd`= change directory
+   `cd [Option] [Répertoire]`
+`cd nameofFile/` -> go to file
+`cd /` répertoire racine
+`cd /Desktop`
+`cd ..` -> go back
 `cd ../`= revenir en arrière dans le dossier source
-`ls -a`= afficher tout dans dossier
+
+#### cat
+
 `cat /etc/group` = voir groupes et utilisateurs
 `sudo apt-get install python` = installer package
+
+#### ID
+
+`id` =`whoami`
+`sudo -i` = devenir root -> mefiat
+
+#### create
+
+   `ln -s /mnt/c/Users/Utilisateur/Coding ./Coding`créer lien entre dossier existant à nouveau dossier dans dossier courant
+
+##### cp _ Copy
+
+`cp [Original] [Destination]`
+`cp text.txt /home/utilisateur/dossierdedestination/`
+
+##### mv _ move
+
+`mv -i` -> demande confirmation avant d'écraser
+`mv -n`-> ne pas écraser si conflit
+
+* Files
+`mv [Option] [Fichier d’origine] [Fichier de destination]`
+`mv /home/flo/Dessins.txt /tmp/` -> déplacer le fichier Dessins.txt vers le répertoire "/tmp"
+`mv client.txt ~/Documents/Contacts/`
+`mv *.txt /Documents/` -> déplacer tous les fichiers se terminant pas .txt vers le dossier /Documents/
+`mv Dessins* /tmp/` -> déplacer tous les fichiers commençant par "Dessins"
+`mv Factures anciennes_factures` -> renommer !!!
+
+* Folder / directory
+`mv data1/* /tmp/` -> Déplacer le contenu du dossier mais pas dossier
+`mv /home/flo/data/ /tmp/` -> déplace ce répertoire vers /tmp/
+`mv data2021/ data2022/` -> renommer !!!
+    -i ou –interactive : elle permet de garantir que le système « demande » si un fichier ou un répertoire doit ou non être écrasé.
+    -u ou –update : elle permet de veiller à ce qu’un fichier d’origine soit uniquement déplacé si le fichier de destination est plus ancien.
+    -v ou –verbose : elle permet d’afficher l’état de progression du déplacement.
+`mv $(ls --ignore=Dessins2.txt)` -> tout déplacer sauf le fichier "Dessins2.txt"
+
+##### Create files
+
+* mkdir _ make directory
+`mkdir Dessins` -> creates folder in current directory
+* touch
+`touch [options] file_name` -> create empty file in current directory
+`touch File1_name File2_name File3_name` -> multiple files
+* cat
+`cat > empty_file.txt` -> create empty file in current directory
+`cat empty_file.txt` -> display content of file !!!
+* > _ only for some shells with this syntax (bash exemple)
+`> filename`
+`> /path/to/filename`
+
+#### Remove
+
+`rmdir`_remove empty directory
+`rm -rf`_remove directory
+`clear`_clear terminal
+
+##### vim _ éditeur de texte
+
+Once you are in insert mode, press `Esc` to return to command mode.
+To save your changes and exit Vim, type `:wq` and press `Enter`.
+`:` enters command-line mode.
+`w` stands for write (save).
+`q` stands for quit.
+
+`curl` -> client http
+
+#### Listing
+
+`ls` -> list what is inside current folder
+`ll` or `ls - l` -> long listing command
+`ls -a`= afficher tout dans dossier
+
+### Lecture infos
+
 drwxr-xr-x = droits pour 3 types de groupes par 3 caractères : read, write, execute
 
 * d -> dossier
 * owner : 3 premiers caractères
 * groupe
 * reste
-
-`id` =`whoami`
-`sudo -i` = devenir root -> mefiat
-
-`ln -s /mnt/c/Users/Utilisateur/Coding ./Coding`créer lien entre dossier existant à nouveau dossier dans dossier courant
-
-`curl` -> client http
 
 ### Users /VS/ Réseau
 
