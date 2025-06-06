@@ -68,4 +68,5 @@ Source: <https://www.lemagit.fr/conseil/Reseau-comprendre-les-14-protocoles-esse
 ### DHCP, configuration dynamique des hôtes _ Dynamic Host Configuration Protocol
 
   appareil première connexion à un réseau
+  
   handshake avec serveur qui propose adresse IP et options, appareil choisit, serveur valide
