@@ -1,5 +1,7 @@
 # PROTOCOLES
 
+## Sommaire
+
 * Protocoles de communication
   * résolution d’adresses (ARP)
   * transfert hypertexte (HTTP)
