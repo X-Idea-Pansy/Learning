@@ -77,8 +77,8 @@ Source: <https://www.lemagit.fr/conseil/Reseau-comprendre-les-14-protocoles-esse
   control connection (port 21) : `get, put, ls, cd`
   data connection (port 20)
   FTP = without encryption : not secured
-  SFTP _ SSH File Transfer Protocol (port 22)
-  FTPS _ FTP Secure : SSL or TLS encryption
+  SFTP_SSH File Transfer Protocol (port 22)
+  FTPS_FTP Secure : SSL or TLS encryption
   secteur bancaire
 
 ### HTTP, transfert hypertexte _ Hypertext Transfer Protocol
@@ -89,4 +89,3 @@ Source: <https://www.lemagit.fr/conseil/Reseau-comprendre-les-14-protocoles-esse
   connectionless - server disconnects client then reconnects with response
   every type of data if both ends can read those
   stateless : sever and device know about each other during time of request, not after
-  
