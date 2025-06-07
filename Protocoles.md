@@ -34,10 +34,12 @@ Sources:
     * adresses avec longueurs diff
     * adresses fonctionnent sur couches diff du modèle OSI
 
-    MAC: Media Access Control _ unique ID _ comm. entre (1 physique) et (3 réseau) modèle OSI _ Ethernet et Wi-Fi, technologies de réseau IEEE 802 
+    MAC: Media Access Control _ unique ID 
+    * comm. entre (1 physique) et (3 réseau) modèle OSI _ Ethernet et Wi-Fi, technologies de réseau IEEE 802 
       -> identifier de manière unique un élément matériel spécifique
       -> ident devices on a network
-      -> MAC est codée en dur dans le matériel d'un appareil et ne peut pas être modifiée, stockées dans le micrologiciel du périphérique
+      -> MAC est codée en dur dans le matériel d'un appareil 
+      -> peut pas être modifiée, stockées dans le micrologiciel du périphérique
 
     IP: Internet Protocol _ logical ID : network ID + host ID 
       -> identifier un périphérique sur un réseau
