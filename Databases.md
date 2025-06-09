@@ -59,7 +59,7 @@ Index
 ## Vectorielles
 
 * AI, moteur de recherche
--> associer numéro à mot pour faire une base de données 
+-> associer numéro à mot pour faire une base de données
 -> rapprocher d'un point de vue numérique les concepts qui vont ensemble avec plusieurs dimensions (précision + contexte)
 * stocker listes de nombres
 * Pinecone, weaviate, qdrant
