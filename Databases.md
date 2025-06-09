@@ -56,9 +56,9 @@ Index
 -> pas aoir des boucles dans des boucles
 * recommandations, réseaux sociaux, détection fraude
 
-# Vectorielles
+## Vectorielles
 
-* AI, moteur de recherche 
+* AI, moteur de recherche
 -> associer numéro à mot pour faire une base de données 
 -> rapprocher d'un point de vue numérique les concepts qui vont ensemble avec plusieurs dimensions (précision + contexte)
 * stocker listes de nombres

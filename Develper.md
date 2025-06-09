@@ -91,3 +91,46 @@ HTTPS (avec TLS/SSL=ancien nom)
 DNS : nslookup, dig
 TCP : netstat/SS, ping, traceroute/tracert/tracepath(linux), telnet/netcat, tcpdump
 HTTP : curl, wget, telnet
+
+## Outils
+
+<https://youtu.be/nmUBSX6BEak?list=TLPQMDkwNjIwMjW5zRUFJzhqAA>
+
+### Gestion de config
+
+* Ansible, Chef, puppet, saltstack
+-> déployer autant de fois voulu la même recette initiale
+-> passer le code à l'admin system pour qu'il le mette sur son serveur
+
+### Conteneurisation
+
+* docker, lxc, podman
+-> créer conteneurs avec : code + dépendances + OS + librairies
+-> toujours marcher de la même façon : ordi dev ou prod = pareil
+
+### CICD Continous Integration Continuous Diployment
+
+* Gitlab, jenkins, argo
+-> système pipeline -> fait toutes les étapes pour créer conteneur -> automatique
+
+### Orchestrateurs
+
+* kubernetes, nomad
+-> responsable pour attribuer à espace dispo
+-> plusieurs microservices à gérer
+    -> où les placer ? Sur quel serveur ? En fonction des besoins de chaque application
+
+### Cloud
+
+* où vivent les applis ?
+* aws, google cloud patform, azure
+-> avoir le bon nombre de serveur au bon moment 
+    -> adapter dynamiquement au nombre d'utilisateur
+    -> pas avoir le max en continu : cher + gaspi
+
+### Observabilité
+
+* monitoring
+* prometheus, grafana, elastic stack, data dog
+-> inspecteur
+-> surveiller certaines valeurs: utilisation disque dur, etc.
