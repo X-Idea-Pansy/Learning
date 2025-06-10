@@ -6,13 +6,13 @@
 
 ### Plages réseaux (CIDR block)
 
-1.2.3.4/32 -> 32 correspond à plage adresse IP finissant par même adresse
+* 1.2.3.4/32 -> 32 correspond à plage adresse IP finissant par même adresse
     -> 1 adresse IP
-10.0.0.0/24 -> 10.0.0.1 - 10.0.0.255
+* 10.0.0.0/24 -> 10.0.0.1 - 10.0.0.255
     -> 255 IP
-10.0.0.0/16 -> 10.0.0.1 - 10.0.255.255
+* 10.0.0.0/16 -> 10.0.0.1 - 10.0.255.255
     -> 255*255 IP
-10.0.0.0/8 -> 10.0.0.1 - 10.255.255.255
+* 10.0.0.0/8 -> 10.0.0.1 - 10.255.255.255
     -> 255*255*255 IP
 
 ### IP
@@ -83,7 +83,9 @@ HTTPS (avec TLS/SSL=ancien nom)
 -> échange de clés = certificats -> authentifier + chiffrer
 
 * load balancer (niveau 4:plus rapide ou 7:plus smart)
+
     -> redirige requete vers serveur
+
     -> plus rapide que serveur
 
 ### SUM UP
@@ -99,38 +101,50 @@ HTTP : curl, wget, telnet
 ### Gestion de config
 
 * Ansible, Chef, puppet, saltstack
+
 -> déployer autant de fois voulu la même recette initiale
+
 -> passer le code à l'admin system pour qu'il le mette sur son serveur
 
 ### Conteneurisation
 
 * docker, lxc, podman
+
 -> créer conteneurs avec : code + dépendances + OS + librairies
+
 -> toujours marcher de la même façon : ordi dev ou prod = pareil
 
 ### CICD Continous Integration Continuous Diployment
 
 * Gitlab, jenkins, argo
+
 -> système pipeline -> fait toutes les étapes pour créer conteneur -> automatique
 
 ### Orchestrateurs
 
 * kubernetes, nomad
+
 -> responsable pour attribuer à espace dispo
+
 -> plusieurs microservices à gérer
+
     -> où les placer ? Sur quel serveur ? En fonction des besoins de chaque application
 
 ### Cloud
 
 * où vivent les applis ?
 * aws, google cloud patform, azure
--> avoir le bon nombre de serveur au bon moment 
+
+-> avoir le bon nombre de serveur au bon moment
     -> adapter dynamiquement au nombre d'utilisateur
+
     -> pas avoir le max en continu : cher + gaspi
 
 ### Observabilité
 
 * monitoring
 * prometheus, grafana, elastic stack, data dog
+
 -> inspecteur
+
 -> surveiller certaines valeurs: utilisation disque dur, etc.
