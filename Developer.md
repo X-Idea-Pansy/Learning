@@ -148,3 +148,60 @@ HTTP : curl, wget, telnet
 -> inspecteur
 
 -> surveiller certaines valeurs: utilisation disque dur, etc.
+
+### développement web
+
+<https://www.peexeo.com/publication/les-principales-notions-a-connaitre-en-developpement-web>
+
+#### HyerText Markup Language, HTML
+
+* langage de base d'un site internet, balisage pour écrire hypertexte pour définir structure sémantique page web
+* docs contenant des infos liées entre elles par des hyperliens (href)
+* permet ajout titres, listes à puces, formulaires, images.
+
+#### Cascade Style Sheet, CSS
+
+* langage -> définir la forme à donner à document
+* couleurs, marges, bordures et effet au survol d’éléments
+
+#### JavaScript
+
+* langage de programmation -> implémenter des mécanismes complexes sur une page web
+* contrôles comme le fait de vérifier si un champ est bien rempli, l’affichage d’une alerte, la gestion d’effets visuels
+* on utilise le Javascript dans du HTML. Les portions de code javascript étant délimitées par des balises spécifiques (<script> et </script>)
+* ne pas confondre le Javascript et le JAVA
+
+Permet
+* Vérification de saisie dans des formulaires (Adresse, email)
+* Calculs simples suite à des saisies de formulaire (Tarifs, calculatrice)
+* Moteur de recherche (base de recherche définie par le webmaster)
+* Gestion des dates et des heures (Date du jour, Date de mise à jour, Calendriers)
+* Gestion des cookies (Sauvegarde d’information : nombre de visites, caddie virtuel)
+* Gestion de la navigation (Menus dynamique, popup)
+* Animations graphiques (Dynamic HTML, MouseOver, bannières rotatives, jeux)
+* Création d’application web avec les appels Ajax vers le serveur
+* Création de jeux
+
+#### jQuery
+
+* bibliothèque JavaScript gratuite, libre et multiplateforme
+* framework JavaScript le plus connu et le plus utilisé
+
+Avec jQuery, vous pouvez par exemple :
+* Ajouter, supprimer ou modifier des éléments HTML au sein de votre page.
+* Changer les styles des éléments de la page en modifiant le CSS qui leur est associé.
+* Animer des éléments de votre page.
+* Envoyer et recevoir des données depuis un serveur grâce à AJAX
+
+#### PHP
+
+* langage de script open source
+* Le Javascript est exécuté côté client alors que le PHP, lui, est exécuté côté serveur.
+* créer des sites Internet dynamiques, et, administrables par le biais de MySQL.
+
+Voici différents exemples de ce que permet PHP :
+
+* Automatiser la gestion d’articles ou autres éléments de votre site.
+* Gérer le contenu de vos administrations.
+* Gérer des galeries photos, des annuaires de liens, des sondages, des forums, des moteurs de recherche internes, etc …
+* Mettre en place des fonctions de tri et hachage, le traitement de chaînes de caractères, la génération et la modification d’images, les algorithmes de compression, etc…
