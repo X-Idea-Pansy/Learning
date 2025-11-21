@@ -115,6 +115,7 @@ full course protocoles?
   utilisateur -> cherche nom de domaine (hostname)
   serveur DNS -> convertit nom de domaine en IP (via cache/local browser < recursive resolver)
               -> cherche IP
+'cat /etc/hosts' (table DNS locale)
 
 ### DHCP, configuration dynamique des hôtes _ Dynamic Host Configuration Protocol
 
@@ -155,3 +156,9 @@ Most often:
 * connexions entre un appareil distant et une machine hôte pour permettre une session à distance
 * permet à l’utilisateur d’accéder aux ressources du réseau et aux données de l’ordinateur hôte
 * pas des protections de sécurité sophistiquées : désuet
+
+## SSH
+'ping <nomouIPmachine>.lan'
+'ssh <nomutilisateur>@<nomouIPmachine>'
+'/home/idea/.ssh/known_hosts' ctl O avec Vs code, fichier associant chaque machine(nom de domaine ou IP) avec ses clés SSH publiques
+
