@@ -15,7 +15,7 @@
 ##   File "/usr/lib64/python3.14/site-packages/libvirt.py", line 1395, in create
 ##     raise libvirtError('virDomainCreate() failed')
 ## libvirt.libvirtError: Requested operation is not valid: network 'default' is not active
-
+https://askubuntu.com/questions/1036297/cant-start-kvm-guest-network-default-is-not-active/1120132#1120132
 
 root@doe:~# virsh net-list --all
  Name      State      Autostart   Persistent
